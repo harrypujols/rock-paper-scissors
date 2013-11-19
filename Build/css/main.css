@@ -78,7 +78,7 @@ textarea {
 .container {
   max-width: 768px;
   margin: 0 auto;
-  padding: 0 5px; }
+  padding: 0 15px; }
 
 #selection {
   margin-bottom: 100px; }
