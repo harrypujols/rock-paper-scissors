@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.236px"
+	 height="16.769px" viewBox="1.763 40.231 19.236 16.769" enable-background="new 1.763 40.231 19.236 16.769" xml:space="preserve"
+	>
+<title>rock-paper-scissors</title>
+<description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="paper" transform="translate(2.000000, 41.000000)" sketch:type="MSLayerGroup">
+		<path id="Shape" sketch:type="MSShapeGroup" fill="#FFFFFF" stroke="#000000" d="M7.609,14.5c-1.083,0-2.109-0.217-2.109-0.982
+			v-0.396c0-0.765,1.026-1.622,2.109-1.622h6.161c1.084,0,1.729,0.857,1.729,1.622v0.396c0,0.767-0.646,0.982-1.729,0.982H7.609
+			L7.609,14.5z"/>
+		<path id="Shape_1_" sketch:type="MSShapeGroup" fill="#FFFFFF" stroke="#000000" d="M10.609,9.5C9.525,9.5,8.5,9.283,8.5,8.518
+			V8.122C8.5,7.357,9.525,6.5,10.609,6.5h6.16c1.084,0,1.729,0.857,1.729,1.622v0.396c0,0.767-0.646,0.982-1.729,0.982H10.609
+			L10.609,9.5z"/>
+		<path id="Shape_2_" sketch:type="MSShapeGroup" fill="#FFFFFF" stroke="#000000" d="M9.489,12.5c-0.971,0-1.989-0.336-1.989-1.041
+			v-0.133C7.5,10.621,8.519,9.5,9.489,9.5h6.651c0.971,0,1.358,1.121,1.358,1.826v0.133c0,0.705-0.39,1.041-1.358,1.041H9.489
+			L9.489,12.5z"/>
+		<path id="Shape_3_" sketch:type="MSShapeGroup" fill="#FFFFFF" stroke="#000000" d="M9.5,11.277V7.195
+			C9.5,7.037,9.701,6.5,9.686,6.5h6.455c0.971,0,1.359-0.336,1.359-1.041V5.326c0-0.705-0.389-1.826-1.359-1.826H9.49
+			c-0.384,0-0.736,0.141-1.025,0.352C7.654,3.02,6.527,2.5,5.274,2.5H5.19C2.727,2.5,0.5,4.732,0.5,7.195v4.083
+			c0,2.463,2.228,4.223,4.69,4.223h0.082C7.735,15.5,9.5,13.74,9.5,11.277L9.5,11.277z"/>
+		<path id="Shape_4_" sketch:type="MSShapeGroup" fill="#FFFFFF" stroke="#000000" d="M7.277,11.57c0-1.074-0.466-2.029-1.19-2.689
+			c0.723-0.663,1.19-1.631,1.19-2.726c0-0.491-0.463-1.602,0.128-1.706c0.592-0.104,0.436,1.485,0.576,1.746
+			c0.141,0.26,1.031,0.672,1.5,0.583c0.609-0.089,2.344-2.87,2.25-3.417C11.637,2.814,8.473,0.16,8.473,0.16
+			C7.59-0.684,5.797-0.242,4.469,1.146C4.038,1.596,3.721,2.09,3.502,2.582C1.803,2.783,0.475,4.296,0.475,6.155
+			c0,1.042,0.422,1.974,1.086,2.634c-0.785,0.662-1.298,1.654-1.298,2.781c0,1.994,1.569,3.609,3.507,3.609
+			S7.277,13.564,7.277,11.57L7.277,11.57z"/>
+	</g>
+</g>
+</svg>
