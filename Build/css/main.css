@@ -80,17 +80,34 @@ textarea {
   margin: 0 auto;
   padding: 0 5px; }
 
+#selection {
+  margin-bottom: 100px; }
+
 button {
   border: none;
   background: transparent;
   display: block;
   margin: 20px 0;
-  transform: none; }
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: translateX 0.8s;
+  -moz-transition: translateX 0.8s;
+  transition: translateX 0.8s; }
   button img {
     width: auto;
     height: 50px; }
   button:hover, button:active {
-    transform: translateX(50px); }
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -o-transform: translateX(15px);
+    transform: translateX(15px); }
 
 /* ==========================================================================
    Helper classes
