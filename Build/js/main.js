@@ -62,7 +62,7 @@
     }
     userChoice = $(this).attr('class');
     $('#result').empty();
-    $('#result').append('<p> You chose ' + userChoice + '. The computer chose ' + computerChoice + '</p>');
+    $('#result').append('<p> You chose ' + userChoice + '. The computer chose ' + computerChoice + '.</p>');
     compare(userChoice, computerChoice);
   });
 
