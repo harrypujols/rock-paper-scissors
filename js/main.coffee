@@ -32,9 +32,10 @@ compare = (choice1, choice2) ->
 		if choice2 == 'paper'
 			result('win')
 	return
+	
 # now, this is where the game begins
 $('#selection button').click ->
-	# turning a random computer number into a string
+	# defining the computer choice
 	computerChoice = randomChoice(1,3)
 	if computerChoice == 1
 		computerChoice = 'rock'
@@ -42,7 +43,7 @@ $('#selection button').click ->
 		computerChoice = 'paper'
 	if computerChoice == 3
 		computerChoice = 'scissors'
-	# the user choice
+	# defining the user choice
 	userChoice = $(this).attr('class')
 	# running all the results and displaying them on the page
 	$('#result').empty()
