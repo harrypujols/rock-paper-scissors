@@ -1,3 +1,4 @@
+@import "settings";
 /*
  * HTML5 Boilerplate
  *
@@ -9,6 +10,8 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=VT323|Press+Start+2P);
 
 html,
 button,
@@ -90,49 +93,9 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Game Styles
    ========================================================================== */
-.container {
-	max-width: 768px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
-
-#selection {
-	margin-bottom: 100px;
-}
-
-button {
-	border: none;
-	background: transparent;
-	display: block;
-	margin: 20px 0;
-	@include transform( translateX(0) );
-	@include transition( translateX 0.8s );
-	
-	img {
-		width: auto;
-		height: 50px;
-	}
-	
-	&:hover, &:active {
-		@include transition( all 0.4s );
-		@include transform( translateX(15px) );
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import "game";
 
 
 
@@ -144,7 +107,7 @@ button {
  * Image replacement
  */
 
-.ir {
+%ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
@@ -152,7 +115,7 @@ button {
     *text-indent: -9999px;
 }
 
-.ir:before {
+%ir:before {
     content: "";
     display: block;
     width: 0;
@@ -163,7 +126,7 @@ button {
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 
-.hidden {
+%hidden {
     display: none !important;
     visibility: hidden;
 }
@@ -172,7 +135,7 @@ button {
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
 
-.visuallyhidden {
+%visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -188,8 +151,8 @@ button {
  * when navigated to via the keyboard: h5bp.com/p
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+%visuallyhidden.focusable:active,
+%visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -202,7 +165,7 @@ button {
  * Hide visually and from screenreaders, but maintain layout
  */
 
-.invisible {
+%invisible {
     visibility: hidden;
 }
 
@@ -218,13 +181,13 @@ button {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
+%clearfix:before,
+%clearfix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
 
-.clearfix:after {
+%clearfix:after {
     clear: both;
 }
 
@@ -233,26 +196,10 @@ button {
  * Include this rule to trigger hasLayout and contain floats.
  */
 
-.clearfix {
+%clearfix {
     *zoom: 1;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.
@@ -279,10 +226,6 @@ button {
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
 
     .ir a:after,
     a[href^="javascript:"]:after,
