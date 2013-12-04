@@ -2,10 +2,28 @@
 <!-- @include _header -->
 <div class="container">
 	<h1>Rock | Paper | Scissors</h1>
-	<div id="selection">
-		<button class="rock"><!-- @include _rock --></button>
-		<button class="paper"><!-- @include _paper --></button>
-		<button class="scissors"><!-- @include _scissors --></button>
+	<div id="score">
+		<div class="user">
+			You: <span class="score"></span>
+		</div>
+		<div class="computer">
+			Computer: <span class="score"></span>
+		</div>
+		<div class="tie">
+			Tie: <span class="score"></span>
+		</div>
+	</div>
+	<div id="stage">
+		<div id="selection" class="user column">
+			<button class="rock"><!-- @include _rock --></button>
+			<button class="paper"><!-- @include _paper --></button>
+			<button class="scissors"><!-- @include _scissors --></button>
+		</div>
+		<div class="computer column">
+			<div class="rock"><!-- @include _rock --></div>
+			<div class="paper"><!-- @include _paper --></div>
+			<div class="scissors"><!-- @include _scissors --></div>
+		</div>
 	</div>
 	<div id="result"></div>
 </div>

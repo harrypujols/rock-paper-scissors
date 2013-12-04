@@ -1,3 +1,8 @@
+# starts with score zero
+userScore = 0
+computerScore = 0
+tie = 0
+
 # function to generate a random number within parameters
 randomChoice = (min,max) ->
 	return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -7,11 +12,18 @@ compare = (choice1, choice2) ->
 	result = (outcome) ->
 		if outcome == 'win'
 			outcome = 'You win!'
+			userScore = userScore + 1
 		if outcome == 'lose'
 			outcome = 'You lose :('
+			computerScore = computerScore + 1
 		if outcome == 'tie'
 			outcome = 'It\'s a tie!'
+			tie = tie + 1
 		$('#result').append('<h2>' + outcome + '</h2>')
+		$('.score').empty()
+		$('.user .score').append(userScore)
+		$('.computer .score').append(computerScore)
+		$('.tie .score').append(tie)
 		return
 	# comparing the selections and deciding the outcome	
 	if choice1 == choice2
@@ -49,6 +61,9 @@ $('#selection button').click ->
 	$('#result').empty()
 	$('#result').append('<p> You chose ' + userChoice + '. The computer chose ' + computerChoice + '.</p>')
 	compare(userChoice, computerChoice)
+	# displaying the choices graphically
+	$('#selection button, .computer.column div').removeClass('selected')
+	$(this).addClass('selected')
+	$('.computer.column div.'+computerChoice).addClass('selected')
 	return
-	
 	
