@@ -65,3 +65,5 @@ button {
   margin-top: 15px; }
   #result p {
     font-size: 12px; }
+  #result h2 {
+    line-height: 3em; }
