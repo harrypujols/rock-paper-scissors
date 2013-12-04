@@ -63,6 +63,8 @@
 
   $('#selection button').click(function() {
     var computerChoice, userChoice;
+    $('#result').empty();
+    $('#selection button, .computer.column div').removeClass('selected');
     computerChoice = randomChoice(1, 3);
     if (computerChoice === 1) {
       computerChoice = 'rock';
@@ -74,11 +76,9 @@
       computerChoice = 'scissors';
     }
     userChoice = $(this).attr('class');
-    $('#result').empty();
     $('#result').append('<p> You chose ' + userChoice + '. The computer chose ' + computerChoice + '.</p>');
     compare(userChoice, computerChoice);
-    $('#selection button, .computer.column div').removeClass('selected');
-    $(this).addClass('selected');
+    $('#selection button.' + userChoice).addClass('selected');
     $('.computer.column div.' + computerChoice).addClass('selected');
   });
 
