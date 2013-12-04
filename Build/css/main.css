@@ -15,7 +15,7 @@ h1 {
   top: 50%;
   margin-left: -320px;
   margin-top: -240px;
-  padding: 15px;
+  padding: 15px 0;
   border: 4px double black;
   font-family: 'Press Start 2P', monospace;
   color: black;
@@ -23,8 +23,12 @@ h1 {
 
 #score {
   border-top: 4px double black;
+  border-top-style: dashed;
   border-bottom: 4px double black;
-  padding: 5px; }
+  border-bottom-style: dashed;
+  padding: 10px; }
+  #score div {
+    padding: 2px 10px; }
 
 #stage:before, #stage:after {
   content: "";
@@ -33,12 +37,15 @@ h1 {
   clear: both; }
 
 .column {
-  float: left; }
+  float: left;
+  margin-left: 15px; }
 
 .computer.column {
   margin-left: 500px; }
   .computer.column div {
     margin-bottom: 4px; }
+    .computer.column div:hover {
+      cursor: not-allowed; }
 
 button {
   border: none;

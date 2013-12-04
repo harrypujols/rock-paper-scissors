@@ -2,6 +2,8 @@
 
 $default-color: black;
 $default-background: white;
+$user-color: blue;
+$computer-color: red;
 $default-border: 4px double $default-color;
 
 @mixin clearfix {
@@ -33,7 +35,7 @@ h1 {
 	top: 50%;
 	margin-left: -(640px/2);
 	margin-top: -(480px/2);
-	padding: 15px;
+	padding: 15px 0;
 	border: $default-border;
 	font-family: 'Press Start 2P', monospace;
 	color: $default-color;
@@ -42,8 +44,13 @@ h1 {
 
 #score {
 	border-top: $default-border;
+	border-top-style: dashed;
 	border-bottom: $default-border;
-	padding: 5px;
+	border-bottom-style: dashed;
+	padding: 10px;
+	div {
+		padding: 2px 10px;
+	}
 }
 
 #stage {
@@ -52,6 +59,7 @@ h1 {
 
 .column {
 	float: left;
+	margin-left: 15px;
 }
 
 .computer.column {
@@ -59,6 +67,9 @@ h1 {
 	
 	div {
 		margin-bottom: 4px;
+		&:hover {
+			cursor: not-allowed;
+		}
 	}
 }
 
@@ -81,11 +92,11 @@ button {
 }
 
 .user .selected .graphic {
-	fill: blue;
+	fill: $user-color;
 }
 
 .computer .selected .graphic {
-	fill: red;
+	fill: $computer-color;
 }
 
 #result {
