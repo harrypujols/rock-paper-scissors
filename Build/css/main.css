@@ -1,4 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=VT323|Press+Start+2P);
+@keyframes blinking {
+  from {
+    fill: black; }
+
+  to {
+    fill: white; } }
+
+@-webkit-keyframes blinking {
+  from {
+    fill: black; }
+
+  to {
+    fill: white; } }
+
 html, body {
   width: 100%;
   height: 100%; }
@@ -53,8 +67,15 @@ button {
   display: block;
   margin: 0;
   padding: 0; }
-  button:hover {
-    opacity: .5; }
+  button:hover .graphic {
+    -webkit-animation: blinking 0.5s infinite;
+    -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    -moz-animation: blinking 0.5s infinite;
+    -moz-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    -ms-animation: blinking 0.5s linear infinite;
+    -o-animation: blinking 0.5s linear infinite;
+    animation: blinking 0.5s infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1); }
 
 .graphic {
   fill: black;

@@ -5,6 +5,7 @@ $default-background: white;
 $user-color: blue;
 $computer-color: red;
 $default-border: 4px double $default-color;
+$blink-time: 0.5s;
 
 @mixin clearfix {
 	&:before, &:after {
@@ -15,6 +16,26 @@ $default-border: 4px double $default-color;
 	&:after {
     	clear:both;
 	}
+}
+
+@keyframes blinking {
+  from {
+    fill: $default-color;
+  }
+ 
+  to {
+    fill: $default-background;
+  }
+}
+ 
+@-webkit-keyframes blinking {
+  from {
+    fill: $default-color;
+  }
+ 
+  to {
+    fill: $default-background;
+  }
 }
 
 html, body {
@@ -80,8 +101,15 @@ button {
 	margin: 0;
 	padding: 0;
 	
-	&:hover {
-		opacity: .5;
+	&:hover .graphic {
+		-webkit-animation: blinking $blink-time infinite;
+		-webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+		-moz-animation: blinking $blink-time infinite;
+		-moz-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+		-ms-animation: blinking $blink-time linear infinite;
+		-o-animation: blinking $blink-time linear infinite;
+		animation: blinking $blink-time infinite;
+		animation-timing-function: cubic-bezier(1, 0, 0, 1);
 	}
 }
 
