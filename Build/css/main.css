@@ -67,15 +67,15 @@ button {
   display: block;
   margin: 0;
   padding: 0; }
-  button:hover .graphic {
+  button:not(.selected):hover .graphic {
     -webkit-animation: blinking 0.5s infinite;
     -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
     -moz-animation: blinking 0.5s infinite;
     -moz-animation-timing-function: cubic-bezier(1, 0, 0, 1);
-    -ms-animation: blinking 0.5s linear infinite;
-    -o-animation: blinking 0.5s linear infinite;
     animation: blinking 0.5s infinite;
     animation-timing-function: cubic-bezier(1, 0, 0, 1); }
+  button:focus {
+    outline: none; }
 
 .graphic {
   fill: black;

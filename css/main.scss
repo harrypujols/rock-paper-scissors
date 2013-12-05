@@ -101,15 +101,17 @@ button {
 	margin: 0;
 	padding: 0;
 	
-	&:hover .graphic {
+	&:not(.selected):hover .graphic {
 		-webkit-animation: blinking $blink-time infinite;
 		-webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
 		-moz-animation: blinking $blink-time infinite;
 		-moz-animation-timing-function: cubic-bezier(1, 0, 0, 1);
-		-ms-animation: blinking $blink-time linear infinite;
-		-o-animation: blinking $blink-time linear infinite;
 		animation: blinking $blink-time infinite;
 		animation-timing-function: cubic-bezier(1, 0, 0, 1);
+	}
+	
+	&:focus {
+		outline: none;
 	}
 }
 
