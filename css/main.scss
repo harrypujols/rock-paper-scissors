@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=VT323|Press+Start+2P);
+@import "icons";
 
 $default-color: black;
 $default-background: white;
@@ -20,21 +21,21 @@ $blink-time: 0.5s;
 
 @keyframes blinking {
   from {
-    fill: $default-color;
+    color: $default-color;
   }
  
   to {
-    fill: $default-background;
+    color: $default-background;
   }
 }
  
 @-webkit-keyframes blinking {
   from {
-    fill: $default-color;
+    color: $default-color;
   }
  
   to {
-    fill: $default-background;
+    color: $default-background;
   }
 }
 
@@ -87,21 +88,25 @@ h1 {
 	margin-left: 500px;
 	
 	div {
-		margin-bottom: 4px;
+		margin: 20px 0;
 		&:hover {
 			cursor: not-allowed;
 		}
 	}
 }
 
+[class^="icon-"], [class*="icon-"] {
+	font-size: 50px;
+}
+
 button {
 	border: none;
 	background: transparent;
 	display: block;
-	margin: 0;
+	margin: 20px 0;
 	padding: 0;
 	
-	&:not(.selected):hover .graphic {
+	&:not(.selected):hover [class*="icon-"] {
 		-webkit-animation: blinking $blink-time infinite;
 		-webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
 		-moz-animation: blinking $blink-time infinite;
@@ -115,18 +120,12 @@ button {
 	}
 }
 
-.graphic {
-	fill: $default-color;
-	width: 50px;
-	height: 80px;
+.user .selected > [class*="icon-"] {
+	color: $user-color;
 }
 
-.user .selected .graphic {
-	fill: $user-color;
-}
-
-.computer .selected .graphic {
-	fill: $computer-color;
+.computer .selected > [class*="icon-"] {
+	color: $computer-color;
 }
 
 #result {
