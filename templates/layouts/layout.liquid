@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Rock | Paper | Scissors</title>
+        {{ "styles.css" | asset_url | stylesheet_tag }}
+         <!--[if IE 7]>
+            {{ "icon-ie7.css" | asset_url | stylesheet_tag }}
+            {{ "icon-ie7.js" | asset_url | script_tag }}
+        <![endif]-->
+    </head>
+    <body>
+    {% block content %}{% endblock %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    {{ "modernizr-2.6.2.min.js" | asset_url | script_tag }}
+    {{ "game.js" | asset_url | script_tag }}
+    </body>
+</html>

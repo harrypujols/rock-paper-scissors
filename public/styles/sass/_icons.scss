@@ -1,0 +1,25 @@
+@include font-face("rockpaperscissors", font-files("rockpaperscissors.woff", "rockpaperscissors.ttf", "rockpaperscissors.svg#rockpaperscissors"), "rockpaperscissors.eot", normal, normal);
+
+[class^="icon-"], [class*="icon-"] {
+	font-family: 'rockpaperscissors';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-scissors:before {
+	content: "\73";
+}
+.icon-paper:before {
+	content: "\70";
+}
+.icon-rock:before {
+	content: "\72";
+}

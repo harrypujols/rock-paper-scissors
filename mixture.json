@@ -1,0 +1,19 @@
+{
+  "customRubyPath": null,
+  "debug": false,
+  "followLeader": true,
+  "lintScripts": false,
+  "preprocessorLocations": "public",
+  "preprocessorScriptOutput": "public/scripts",
+  "preprocessorStyleOutput": "public/styles",
+  "projectDescription": "Quick start Compass with Mixture, Compass is an open-source CSS Authoring Framework.",
+  "projectName": "rock-paper-scissors",
+  "publishedId": null,
+  "serverHostname": "10.0.1.7",
+  "serverPort": null,
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "index",
+  "templateDirectory": "templates",
+  "type": "mixture",
+  "useCompass": true
+}
