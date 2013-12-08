@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Harry Pujols -- Designer -- @harrypujols
 
 # THANKS
 
-    <name>
+    Mom
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
+    Sass, Compass
+    Coffeescript
     Normalize.css, jQuery, Modernizr
