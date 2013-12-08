@@ -1,4 +1,4 @@
-Welcome to my version of Rock | Paper | Scissors!
+Welcome to my version of Rock - Paper - Scissors!
 =================================================
 
 In this episode, you'll play against the Computer!
