@@ -2,6 +2,10 @@
   "customRubyPath": null,
   "debug": false,
   "followLeader": true,
+  "gitHubPages": {
+    "guid": "ED3DEB2E-70EC-48D4-9653-5240611A208C",
+    "repoUrl": "https://github.com/harrypujols/rock-paper-scissors.git"
+  },
   "lintScripts": false,
   "preprocessorLocations": "public",
   "preprocessorScriptOutput": "public/scripts",

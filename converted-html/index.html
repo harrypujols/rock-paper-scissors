@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Rock | Paper | Scissors</title>
+        <link href="public/styles/styles.min.css" rel="stylesheet" type="text/css" media="all"/>
+         <!--[if IE 7]>
+            <link href="public/styles/sass/icon-ie7.min.css" rel="stylesheet" type="text/css" media="all"/>
+            <script src="public/scripts/icon-ie7.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+    
+<div class="container">
+	<h1>Rock | Paper | Scissors</h1>
+	<div id="score">
+		<div class="user">
+			You: <span class="score">0</span>
+		</div>
+		<div class="computer">
+			Computer: <span class="score">0</span>
+		</div>
+		<div class="tie">
+			Tie: <span class="score">0</span>
+		</div>
+	</div>
+	<div id="stage">
+		<div id="selection" class="user column">
+			<button class="rock"><i class="icon-rock"></i></button>
+			<button class="paper"><i class="icon-paper"></i></button>
+			<button class="scissors"><i class="icon-scissors"></i></button>
+		</div>
+		<div class="computer column">
+			<div class="rock"><i class="icon-rock"></i></div>
+			<div class="paper"><i class="icon-paper"></i></div>
+			<div class="scissors"><i class="icon-scissors"></i></div>
+		</div>
+	</div>
+	<div id="result"></div>
+</div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="public/scripts/modernizr-2.6.2.min.js"></script>
+    <script src="public/scripts/game.min.js"></script>
+    </body>
+</html>
