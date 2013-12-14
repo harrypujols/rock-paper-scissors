@@ -34,27 +34,32 @@
 
 @keyframes blinking {
   from {
-    color: black;
+    color: #c6fd84;
   }
 
   to {
-    color: white;
+    color: black;
   }
 }
 
 @-webkit-keyframes blinking {
   from {
-    color: black;
+    color: #c6fd84;
   }
 
   to {
-    color: white;
+    color: black;
   }
+}
+
+.container {
+  box-shadow: 0px 0px 5px #c6fd84;
 }
 
 html, body {
   width: 100%;
   height: 100%;
+  background-color: black;
 }
 
 h1 {
@@ -71,16 +76,16 @@ h1 {
   margin-left: -320px;
   margin-top: -240px;
   padding: 15px 0;
-  border: 4px double black;
-  font-family: 'Press Start 2P', monospace;
-  color: black;
-  background: white;
+  border: 4px double #c6fd84;
+  font-family: "Press Start 2P", monospace;
+  color: #c6fd84;
+  background: black;
 }
 
 #score {
-  border-top: 4px double black;
+  border-top: 4px double #c6fd84;
   border-top-style: dashed;
-  border-bottom: 4px double black;
+  border-bottom: 4px double #c6fd84;
   border-bottom-style: dashed;
   padding: 10px;
 }
@@ -122,6 +127,7 @@ button {
   margin: 20px 0;
   padding: 0;
   cursor: pointer;
+  color: #c6fd84;
 }
 button:not(.selected):hover [class*="icon-"] {
   -webkit-animation: blinking 0.5s infinite;
@@ -136,7 +142,7 @@ button:focus {
 }
 
 .user .selected > [class*="icon-"] {
-  color: blue;
+  color: white;
 }
 
 .computer .selected > [class*="icon-"] {
