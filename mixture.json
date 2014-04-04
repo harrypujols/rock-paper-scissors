@@ -3,7 +3,7 @@
   "debug": false,
   "followLeader": true,
   "gitHubPages": {
-    "guid": "C73ECCCD-69C3-4601-BB52-BEDC339B031A",
+    "guid": "C746A02F-C1EC-40D2-982A-8DE7190B3159",
     "repoUrl": "https://github.com/harrypujols/rock-paper-scissors.git"
   },
   "lintScripts": false,
@@ -13,7 +13,7 @@
   "projectDescription": "Quick start Compass with Mixture, Compass is an open-source CSS Authoring Framework.",
   "projectName": "rock-paper-scissors",
   "publishedId": null,
-  "serverHostname": "10.0.1.7",
+  "serverHostname": "localhost",
   "serverPort": null,
   "templateDefaultLayout": "layout",
   "templateDefaultPage": "index",

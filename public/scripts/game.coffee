@@ -10,15 +10,15 @@ randomChoice = (min,max) ->
 compare = (choice1, choice2) ->
 	# this renders the comparison into something useful
 	result = (outcome) ->
-		if outcome == 'win'
+		if outcome is 'win'
 			outcome = 'You win!'
-			userScore = userScore + 1
-		if outcome == 'lose'
+			userScore++
+		if outcome is 'lose'
 			outcome = 'You lose :('
-			computerScore = computerScore + 1
-		if outcome == 'tie'
+			computerScore++
+		if outcome is 'tie'
 			outcome = 'It\'s a tie!'
-			tie = tie + 1
+			tie++
 		$('#result').append('<h2>' + outcome + '</h2>')
 		$('.score').empty()
 		$('.user .score').append(userScore)
@@ -26,22 +26,22 @@ compare = (choice1, choice2) ->
 		$('.tie .score').append(tie)
 		return
 	# comparing the selections and deciding the outcome	
-	if choice1 == choice2
+	if choice1 is choice2
 		result('tie')
-	if choice1 == 'rock'
-		if choice2 == 'paper'
+	if choice1 is 'rock'
+		if choice2 is 'paper'
 			result('lose')
-		if choice2 == 'scissors'
+		if choice2 is 'scissors'
 			result('win')
-	if choice1 == 'paper'
-		if choice2 == 'rock'
+	if choice1 is 'paper'
+		if choice2 is 'rock'
 			result('win')
-		if choice2 == 'scissors'
+		if choice2 is 'scissors'
 			result('lose')
-	if choice1 == 'scissors'
-		if choice2 == 'rock'
+	if choice1 is 'scissors'
+		if choice2 is 'rock'
 			result('lose')
-		if choice2 == 'paper'
+		if choice2 is 'paper'
 			result('win')
 	return
 	
@@ -52,11 +52,11 @@ $('#selection button').click ->
 	$('#selection button, .computer.column div').removeClass('selected')
 	# defining the computer choice
 	computerChoice = randomChoice(1,3)
-	if computerChoice == 1
+	if computerChoice is 1
 		computerChoice = 'rock'
-	if computerChoice == 2
+	if computerChoice is 2
 		computerChoice = 'paper'
-	if computerChoice == 3
+	if computerChoice is 3
 		computerChoice = 'scissors'
 	# defining the user choice
 	userChoice = $(this).attr('class')
