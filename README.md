@@ -1,7 +1,7 @@
-Welcome to my version of Rock-Paper-Scissors!
-=================================================
+Rock-Paper-Scissors
+===================
 
-In this episode, you'll play against the Computer!
+This is my version. In this episode, you'll play against the Computer!
 
 ## The rules
 
