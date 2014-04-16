@@ -34,7 +34,7 @@ I wrote it in HTML, Liquid, Coffeescript, Sass, with the aid of Compass.
 
 ## License
 
-- This program's code is free to use any way you like. Knock yourself out.
+- This program's code is [free to use any way you like](https://github.com/harrypujols/rock-paper-scissors/blob/master/README.md). Knock yourself out.
 - Icons are under a [Creative Commons](http://creativecommons.org/licenses/by-nc/4.0) license. 
 
 ## Where to play
