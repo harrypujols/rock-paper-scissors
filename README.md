@@ -13,10 +13,10 @@ This is my version. In this episode, you'll play against the Computer!
 
 - You are the column on the left. 
 - You click on either of the three hands.
-- Each hand represent either of the items.
+- Hands represent each thing.
 - The Computer will make its pick from the column on the right.
-- When you click, see the results.
-- Repeat as much as you like.
+- When you click, the outcome will add to the scoreboard.
+- Rinse repeat, until you get bored.
 
 ## As for the software
 
