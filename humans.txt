@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Harry Pujols -- Designer -- @harrypujols
+
+# THANKS
+
+    Mom
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Sass, Compass
+    Coffeescript
+    Normalize.css, jQuery, Modernizr
