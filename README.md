@@ -18,20 +18,6 @@ This is my version. In this episode, you'll play against the Computer!
 - When you click, the outcome will add to the scoreboard.
 - Rinse repeat, until you get bored.
 
-## As for the software
-
-I wrote it in HTML, Liquid, Coffeescript, Sass, with the aid of Compass.
-
-## Applications used
-
-- **Sketch** for creating the icons.
-- **Iconmoon App** for creating the Webfont based on the icons.
-- **Icon Slate** for making the favicons.
-- **Coda 2** for coding. Coda plugins used: Emmet, Coffeescript Syntax Highlighter.
-- **Mixture** for compiling Sass, Coffeescript, testing, and publishing to Github pages.
-- **Gitbox** for version control.
-- **Github** for storing the repository, and displaying the game!
-
 ## License
 
 - This program's code is [free to use any way you like](https://github.com/harrypujols/rock-paper-scissors/blob/master/LICENSE.md). Knock yourself out.
